@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
     <link rel="stylesheet" href="css/bootstrap.min.css">                                     
     <link rel="stylesheet" href="css/style.css">
+<style>
+	/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+	</style>
 
 </head>
 
@@ -40,7 +67,7 @@
                                     <a href="about.html" class="nav-link">About</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a href="gallery.html" class="nav-link">Gallery</a>
+                                    <a href="gallery.html" class="nav-link">FAQ</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="contact.html" class="nav-link">Contact</a>
@@ -61,120 +88,27 @@
             
         </div>
 
-        <section class="section">
+    <section class="section">
             <div class="container-fluid">
                 <div class="row">
+<button class="accordion">What are your hours of operation?</button>
+<div class="panel">
+  <p>We’re open seven days a week from 6:30 AM to 2:30 PM. Holiday hours may vary, so check our social media for updates.</p>
+</div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
-                        <div class="blog-post">
-                            <h3 class="gold-text">Pellentesque fermentum mauris</h3>
-                            <p>Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
-                            <img src="img/img-1010x336-1.jpg" alt="Image" class="img-fluid img-post">
-                            
-                            <p>You can help templatemo by telling your friends about our HTML CSS templates. Praesent velit ante, congue ac dignissim in, vehicula sit amet urna. Fusce in dapibus quam, eget finibus velit. Nullam erat odio, vulputate id est ut, consequat rutrum justo. Vivamus vel leo vel nunc tincidunt mattis. Sed neque diam, semper suscipit dictum a, sodales ac metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<button class="accordion">Do you make your bagels fresh each day?
+</button>
+<div class="panel">
+  <p> Yes! All of our bagels are made fresh every morning using traditional methods and high-quality ingredients.</p>
+</div>
 
-                            <p>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id. Fusce sagittis ultricies felis, non luctus mauris lacinia quis. Ut fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et mattis.</p>
-
-                            <p>Quisque vel sem eu turpis ullamcorper euismod. Praesent quis nisi ac augue luctus viverra. Sed et dui nisi. Fusce vitae dapibus justo. Pellentesque accumsan est ac posuere imperdiet. Curabitur eros mi, lacinia at euismod quis, dapibus vel ligula. Ut sodales erat vitae nunc tempor mollis. Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. In eu justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh vestibulum eleifend et ac elit.</p>
-
-                            <p>Sed vitae luctus libero. Nam sem neque, finibus id sem pharetra, cursus porttitor ligula. Praesent aliquam fermentum dui, vitae venenatis libero vulputate ac. Fusce bibendum scelerisque magna eget iaculis. Phasellus non arcu eu sem convallis semper. Duis vulputate dignissim rhoncus.</p>
-                        </div>
-                        
-                        <div class="row margin-t-big">
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-
-                                <div class="content-box">
-                                    <img src="img/img-310x180-1.jpg" alt="Image" class="margin-b-30 img-fluid">
-                                    <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #1</h4>
-                                    <p class="margin-b-20">Aenean cursus tellus mauris, quis
-                                    consequat mauris dapibus id. Donec
-                                    scelerisque porttitor pharetra</p>
-                                    <a href="#" class="btn text-uppercase">Detail</a>    
-                                </div>  
-
-                            </div>
-
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-
-                                <div class="content-box">
-                                    <img src="img/img-310x180-2.jpg" alt="Image" class="margin-b-30 img-fluid">
-                                    <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #2</h4>
-                                    <p class="margin-b-20">Aenean cursus tellus mauris, quis
-                                    consequat mauris dapibus id. Donec
-                                    scelerisque porttitor pharetra</p>
-                                    <a href="#" class="btn text-uppercase">Read More</a>    
-                                </div>  
-
-                            </div>
-
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-
-                                <div class="content-box">
-                                    <img src="img/img-310x180-3.jpg" alt="Image" class="margin-b-30 img-fluid">
-                                    <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #3</h4>
-                                    <p class="margin-b-20">Aenean cursus tellus mauris, quis
-                                    consequat mauris dapibus id. Donec
-                                    scelerisque porttitor pharetra</p>
-                                    <a href="#" class="btn text-uppercase">Detail</a>    
-                                </div>  
-
-                            </div>    
-                        </div>
-                        
-                    </div>
-
-                    <aside class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 aside-r">
-
-                        <div class="aside-container">
-                            <h3 class="gold-text title">
-                                Categories
-                            </h3>
-                            <nav>
-                                <ul class="nav">
-                                    <li><a href="#" class="text-link">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" class="text-link">Tincidunt non faucibus placerat</a></li>
-                                    <li><a href="#" class="text-link">Vestibulum tempor ac lectus</a></li>
-                                    <li><a href="#" class="text-link">Elementum egestas dui</a></li>
-                                    <li><a href="#" class="text-link">Nam in augue consectetur</a></li>
-                                    <li><a href="#" class="text-link">Fusce non turpis euismod</a></li>
-                                    <li><a href="#" class="text-link">Text Link Color #006699</a></li>
-                                </ul>
-                            </nav>
-                            <hr class="margin-t-small">   
-                            <h3 class="gold-text title margin-t-small">
-                                Useful Links
-                            </h3>
-                            <nav>   
-                                <ul class="nav">
-                                    <li><a href="#" class="text-link">Suspendisse sed dui nulla</a></li>
-                                    <li><a href="#" class="text-link">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" class="text-link">Duiss nec purus et eros</a></li>
-                                    <li><a href="#" class="text-link">Etiam pulvinar et ligula sed</a></li>
-                                    <li><a href="#" class="text-link">Proin egestas eu felis et iaculis</a></li>
-                                </ul>
-                            </nav>   
-                            <hr class="margin-t-small"> 
-
-                            <div class="content-box margin-t-small">
-                                <a href="#" class="text-link"><h4 class="margin-b-20 thin-font">Duis sit amet tristique #1</h4></a>
-                                <p class="margin-b-30">Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
-                            </div>
-                            <hr class="margin-t-small">
-                            <div class="content-box margin-t-small">
-                                <a href="#" class="text-link"><h4 class="margin-b-20 thin-font">Duis sit amet tristique #2</h4></a>
-                                <p>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
-                            </div>  
-                            <hr class="margin-t-small">
-                            <div class="content-box margin-t-small">
-                                <a href="#" class="text-link"><h4 class="margin-b-20 thin-font">Duis sit amet tristique #3</h4></a>
-                                <p>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
-                            </div>      
-                        </div>
-                        
-                        
-                    </aside>
-
-                </div>
+<button class="accordion">Do you offer gluten-free or vegan options?</button>
+<div class="panel">
+  <p> While we don’t offer gluten-free bagels at this time, we do have vegan-friendly spreads and sandwich options. Ask our staff for suggestions!</p>
+</div>
+                 
+</div>
+</div>
                 
             </div>
         </section>
@@ -184,6 +118,23 @@
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
         <script src="js/bootstrap.min.js"></script>
-       
+       <script>var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}</script>
 </body>
 </html>
